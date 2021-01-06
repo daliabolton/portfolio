@@ -1,0 +1,319 @@
+h1{   
+    text-align: center;
+    font-family: 'Spicy Rice', cursive;
+    font-size: 45px;
+    /* identical to box height */
+    color: #FFFFFF;
+    text-shadow: 2px 3px 3px hotpink;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    
+    }
+
+.logo{
+
+    background-color: #5C92FF;
+    padding-bottom: 5px;
+    border-bottom: 20px solid  #2932D9;
+    text-align: center;
+    font-size: 45px;
+    
+    }
+
+    
+p{
+    text-align: left;
+   
+}
+
+
+li a{
+    
+    text-decoration: none;
+    color: white;
+    
+}
+
+body{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+ul#end li{
+    display: inline;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.nav-item{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link.active{
+    font-weight: bold;
+}
+
+.nav.justify-content-center{
+    font-size: 17px;
+}
+
+
+/* identical to box height */
+   
+
+
+
+ul#nav li{
+    display: inline;
+    
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer; 
+   
+}
+
+
+
+#nav{
+    
+    text-decoration: none;
+}
+
+
+#footer{
+    
+    font-size: small;
+    color: white;
+    text-align: center;
+    
+    background-color: rgb(155, 154, 154) ;
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    font-weight: bold;
+
+    
+    
+    
+}
+
+
+
+
+
+
+
+.title {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    padding: 20px;
+   
+    
+}
+
+ p{
+     
+     font-family: 'Times New Roman', Times, serif;
+     
+ }
+
+
+.myWork{
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+
+}
+
+#title{
+    font-family: 'Spicy Rice', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    padding-right: 900px;
+    padding-bottom: 50px;
+    
+}
+.col.box{
+    padding: 30px 50px;
+    border: 3px solid transparent;
+    background-clip:padding-box;
+  }
+  
+
+h4{
+    color: black;
+    font-size: 25px; 
+    font-family: 'Times New Roman', Times, serif;
+   
+    
+}
+.mySkills{
+    background-color: black;
+    padding-bottom: 150px;
+    margin: 0 auto;
+}
+
+
+.someSkills {
+    position: relative;
+    background-color: white;
+    text-align: left;
+    list-style-type: circle;
+    
+    
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
+.myPicture{
+   width: 50%;
+    float: right;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    
+
+}
+
+
+
+
+h3{
+   color: white;
+    font-family: 'Spicy Rice', cursive ;
+    text-align: center; 
+   margin-top: 0px;
+   padding-top: 100px;
+}
+
+
+h2{
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+
+
+.someSkills{
+    display: flex;
+
+}
+
+.popup-overlay {
+    /*Hides pop-up when there is no "active" class*/
+    visibility: hidden;
+    position: absolute;
+    background: #ffffff;
+    border: 3px solid black;
+    width: 50%;
+    height: auto;
+    left: 25%;
+  }
+
+  .popup-overlay.active {
+    /*displays pop-up when "active" class is present*/
+    visibility: visible;
+    text-align: center;
+    background-color: white;
+    border: 3px solid white;
+    bottom: 30%;
+  }
+
+  .popup-content {
+    /*Hides pop-up content when there is no "active" class */
+    visibility: hidden;
+  }
+
+  .popup-content.active {
+    /*Shows pop-up content when "active" class is present */
+    visibility: visible;
+  }
+
+  .open{
+     width: 10%;
+     text-align: center;
+     font-family: 'Spicy rice', cursive;
+     
+      
+    }
+  
+  button {
+    display: inline;
+    border-radius: 30px;
+    margin: .30rem;
+    font-size: 1rem;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    
+    
+  }
+  
+  button:hover {
+    border: 1px solid #666666;
+    background: #666666;
+    color: #ffffff;
+    
+  }
+
+  button.close{
+      float: left;
+    margin: .50rem;
+    border-radius: 30px;
+    border: 1px solid black;
+      font-family: 'Times New Roman', Times, serif;
+
+  }
+
+
+
+  @media screen and (max-width:800px) {
+    .header, .myWork, .logo, #menu-outer, .square  {
+        width: 100%;
+        margin: auto;
+       
+        
+       
+    }
+  }
+
+  @media screen and (max-width:800px){
+      p,.popup-content,.someSkills,.myPicture{
+          width: 100%;
+          margin: auto;
+         
+          
+      }
+  }
+
+  @media screen and (max-width:800px){
+    .open{
+        width: 25%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:800px){
+    .popup-overlay{
+        width: 50%;
+        margin: auto;
+    }
+}
