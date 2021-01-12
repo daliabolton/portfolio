@@ -1,125 +1,110 @@
 h1{   
     text-align: center;
-    font-family: 'Spicy Rice', cursive;
-    font-size: 45px;
-    
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+    background-color: white ;
     /* identical to box height */
-    color: #FFFFFF;
-    text-shadow: 2px 3px 3px hotpink;
+    color: rgb(96, 111, 250);
+    text-shadow: 1px 1px 1px #FC59A1;
+    letter-spacing: 2.5px;
     padding-top: 30px;
-    padding-bottom: 20px;
     cursor: pointer;
     
     }
 
-    
-    .header{
-    
-    background-color: #5C92FF;
-    padding-bottom: 5px;
-    border-bottom: 20px solid  #2932D9;
-    
-    
-    }
-    h1.logo{
-        font-size: 60px;
-    }
-    
-    body{
-        margin: 20 100;
+    #navbar{
         
-    
-    }
-    .logo{
-
-        background-color: #5C92FF;
+        background-color: white;
         padding-bottom: 5px;
-        border-bottom: 20px solid  #2932D9;
+       color: black;
+       
+      
         text-align: center;
-        font-size: 45px;
-        
+        font-size: 20px;
+        padding-top: none;
+        overflow: hidden;
+    
+        z-index: 1;
         }
 
-   img{
-       width: 50%;
-       align-items: center;
-   }
-    
-    
-    ul#end li{
-        display: inline;
-        padding: 20px;
-        cursor: pointer;
-    }
-    
-    
-    
-    /* identical to box height */
-       
-    #menu-outer {
-        height: 70px;
-        background-color:  #5C92FF;
-        color: black;
-        
-    }
-    
-    .table{
-        display: table;
-        margin: 0 auto;
-        
-        
-    }
-    
-    
-    ul#nav li{
-        display: inline;
-        
-        font-weight: bold;
-        padding: 20px;
-        cursor: pointer; 
-       
-    }
-    
-    li a{
-        text-decoration: none;
-        color: white;
-        
-    }
-    
-    #nav{
-        
-        text-decoration: none;
-    }
-    
-    
-    #footer{
-        
-        font-size: small;
-        color: white;
-        text-align: center;
-        background-color: rgb(121, 120, 120) ;
-        width: 100%;
-        height: 70px;
-        padding-top: 20px;
-        font-weight: bold;
-        
-        
-        
-    }
+h1.logo{
+    font-size: 60px;
+}
 
-    .container-fluid.bg-3{
-        width: 70%;
-        padding: 40px;
-        
-        
-    }
-    
 body{
+    
+    margin: 20 100;
+    
+
+}
+
+.card.border-0 {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+#border{
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+    border-bottom: 1px solid rgb(41, 44, 49);
+    padding-top: 5px;
+}
+
+.title{
+    padding-top: 100px;
+}
+
+.responsive{
+    
+       
+        max-width: 100%;
+        height: auto;
+      
+    
+}
+li a{
+    
+    text-decoration: none;
+    color: rgb(80, 78, 78);
+    font-weight: lighter;
+    
+    
+}
+.title{
+    font-size: 30px;
+    font-family: 'Spicy Rice', cursive;
+    text-align: left;
     margin: auto;
+    
+
+    
+    
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-top: 100px;
+    font-weight: bold;
+}
+p{
+    font-family:'Times New Roman', Times, serif; font-size: 20px; text-align: center; padding-top: 50px; width: 70%;margin: 0 auto;padding-bottom: 50px;
+}
+
+li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .nav-item{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    
+    
 }
 
 .nav-link.active{
@@ -128,4 +113,83 @@ body{
 
 .nav.justify-content-center{
     font-size: 17px;
+}
+
+.lead{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif ;
+    float: left;
+    margin: auto;
+}
+.footer{
+    
+    text-align: center;
+    
+    
+    
+    
+    
+}
+
+ul#end li{
+    display: inline;
+   padding: 10px;
+   padding-bottom: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .header, .myWork, .logo, .mySkills, .table, #menu-outer, .square  {
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width:800px){
+      p, .card-deck{
+          width: 100%;
+      }
+  }
+
+  .responsive{
+      max-width: 100%;
+  }
+
+  .box9{background:white;text-align:center;position:relative}
+.box9 img{width:100%;height:auto}
+.box9:hover img{opacity:10}
+.box9 .box-content{padding:30px 10px 30px 0;background:rgba(0,0,0,.65);position:absolute;top:0;left:0;bottom:0;right:0;opacity:0}
+.box9:hover .box-content{top:10px;left:10px;bottom:10px;right:10px;opacity:1}
+.box9 .title{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight:200;font-size:20px;color:#fff;line-height:17px;margin:0 auto;position:absolute;bottom:60%;left: 30%;}
+.box10 .icon li a,.box9 .icon li a{line-height:50px;border-radius:40%}
+.box9 .icon{list-style:none;padding:5px;margin:0 auto;position:absolute;top:40%;left: 30%;}
+.box9 .icon li{display:inline-block;opacity:0;transform:translateY(40px)}
+.box9:hover .icon li{opacity:1;transform:translateY(0)}
+.box9:hover .icon li:first-child{transition-delay:.1s}
+.box9:hover .icon li:nth-child(2){transition-delay:.2s}
+.box9 .icon li a{display:block;width:100px;height:50px;background:white;font-size:20px;color:#000;margin-right:30px;transition:all .35s ease 0s}
+.box9 .icon a:hover{background:rgb(119, 118, 118)}
+@media only screen and (max-width:990px){.box9{margin-bottom:20px}
+}
+
+
+.content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+  .button{
+    margin: 120px 100px 0px;
+    color: black;
 }

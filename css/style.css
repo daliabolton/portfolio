@@ -1,43 +1,65 @@
 h1{   
     text-align: center;
-    font-family: 'Spicy Rice', cursive;
-    font-size: 45px;
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+    background-color: white ;
     /* identical to box height */
-    color: #FFFFFF;
-    text-shadow: 2px 3px 3px hotpink;
+    color: rgb(96, 111, 250);
+    text-shadow: 1px 1px 1px #FC59A1;
+    letter-spacing: 2.5px;
     padding-top: 30px;
-    padding-bottom: 20px;
     cursor: pointer;
     
     }
 
-.logo{
-
-    background-color: #5C92FF;
-    padding-bottom: 5px;
-    border-bottom: 20px solid  #2932D9;
-    text-align: center;
-    font-size: 45px;
+    #navbar{
+        
+        background-color: white;
+        padding-bottom: 5px;
+       color: black;
+       
+      
+        text-align: center;
+        font-size: 20px;
+        padding-top: none;
+        overflow: hidden;
     
-    }
+        z-index: 1;
+        }
 
-    
 p{
     text-align: left;
    
+}
+
+html{
+    font-size: 1rem;
 }
 
 
 li a{
     
     text-decoration: none;
-    color: white;
+    color: rgb(80, 78, 78);
+    font-weight: lighter;
+    
     
 }
 
 body{
-    width: 100%;
-    margin: auto;
+    
+    margin: 20 100;
+    
+
+}
+
+
+#border{
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+    border-bottom: 1px solid rgb(41, 44, 49);
+    padding-top: 5px;
 }
 
 
@@ -46,19 +68,27 @@ ul#end li{
     display: inline;
     padding: 20px;
     cursor: pointer;
-}
 
-.nav-item{
-    font-family: 'Times New Roman', Times, serif;
 }
+    .nav-item{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        
+        
+    }
+    
+    .nav-link.active{
+        font-weight: bold;
+    }
+    
+    .nav.justify-content-center{
+        font-size: 17px;
+    }
+    
 
-.nav-link.active{
-    font-weight: bold;
-}
+  
 
-.nav.justify-content-center{
-    font-size: 17px;
-}
 
 
 /* identical to box height */
@@ -82,23 +112,20 @@ ul#nav li{
     text-decoration: none;
 }
 
-
-#footer{
+.footer{
     
-    font-size: small;
-    color: white;
     text-align: center;
-    
-    background-color: rgb(155, 154, 154) ;
-    width: 100%;
-    height: 100px;
-    padding-top: 20px;
-    font-weight: bold;
 
-    
-    
-    
+  
 }
+
+ul#end li{
+    display: inline;
+   padding: 10px;
+   padding-bottom: 20px;
+    cursor: pointer;
+}
+
 
 
 
@@ -203,11 +230,6 @@ h3{
 }
 
 
-h2{
-    padding: 10px;
-    text-align: left;
-}
-
 
 
 
@@ -284,36 +306,62 @@ h2{
   }
 
 
-
-  @media screen and (max-width:800px) {
-    .header, .myWork, .logo, #menu-outer, .square  {
-        width: 100%;
-        margin: auto;
-       
-        
-       
-    }
-  }
-
-  @media screen and (max-width:800px){
-      p,.popup-content,.someSkills,.myPicture{
-          width: 100%;
-          margin: auto;
-         
-          
+  @media screen and (min-width: 600px) {
+      h2{
+          font-size: 30px;
       }
   }
 
   @media screen and (max-width:800px){
-    .open{
-        width: 25%;
-        margin: auto;
+      .card.card-body, .col-sm-4{
+            width: 100%;
+            height: 100%;
+            float: left;
+            margin: 0;
+      }
+      img{
+          width: 100%;
+      }
+      .container{
+          max-width: 100%;
+          width: 100%;
+      }
+  }
+
+@media screen and (min-width: 2440px) {
+    h2, p {
+        font-size: 1vw;
+    }
+    .card .card-body{
+        width: 100%;
     }
 }
 
 @media screen and (max-width:800px){
-    .popup-overlay{
-        width: 50%;
-        margin: auto;
+    .s1,.s2,.s3{
+        width: 100%;
     }
+    
+}
+
+.content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+  .button{
+    margin: 120px 100px 0px;
+    color: black;
 }
